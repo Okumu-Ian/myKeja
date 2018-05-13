@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "95684228836",
+    "firebase_url": "https://mykeja-a6313.firebaseio.com",
+    "project_id": "mykeja-a6313",
+    "storage_bucket": "mykeja-a6313.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95684228836:android:76f852244307f7b8",
+        "android_client_info": {
+          "package_name": "icelabs.eeyan.mykeja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95684228836-phjrb1oij38do4vvbgg0roecfedlb3s3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBj4H1lbZ0jH3qs7yW1LbXiAyPaxHntHI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

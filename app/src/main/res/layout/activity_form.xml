@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="#f1ebeb"
+    tools:context="icelabs.eeyan.mykeja.FormActivity">
+
+<ScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="#f1ebeb"
+     >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="16dp"
+    android:background="#f1ebeb"
+   >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_main_icon"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="4dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:tint="#777777"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Project Name *"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_project_name"
+            android:inputType="textPersonName"
+            android:id="@+id/edt_form_name"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+
+    <Spinner
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:entries="@array/currency"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/spinner_currency"
+        android:background="@drawable/spinner_bg"
+        android:padding="5dp">
+    </Spinner>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="95dp"
+        android:layout_alignLeft="@id/spinner_currency"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentStart="true">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Approximate Budget *"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_project_budget"
+            android:inputType="number"
+            android:id="@+id/edt_form_budget"/>
+    </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <Spinner
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:entries="@array/land_area"
+            android:background="@drawable/spinner_bg"
+            android:id="@+id/spinner_land"
+            android:padding="5dp">
+
+        </Spinner>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="140dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Size of plot (Land)"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_project_land_size"
+            android:inputType="numberDecimal"
+            android:id="@+id/edt_form_land_area"/>
+    </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Type of house * : "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:padding="4dp"
+            android:id="@+id/txt_home_options"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/txt_home_options"
+            android:layout_marginStart="4dp"
+            android:layout_centerVertical="true"
+            android:entries="@array/house_type"
+            android:id="@+id/spinner_type"
+            android:background="@drawable/spinner_bg"
+            android:padding="5dp"
+            >
+        </Spinner>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="0dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Total number of rooms *"
+            android:drawablePadding="10dp"
+            android:inputType="number"
+            android:drawableStart="@drawable/ic_project_number_of_rooms"
+            android:id="@+id/edt_form_room_quantity"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" * Required fields"
+        android:textColor="@android:color/holo_red_dark"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="4dp"
+        android:padding="5dp"/>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:id="@+id/btn_submit_construction_form"/>
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

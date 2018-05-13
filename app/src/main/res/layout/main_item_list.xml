@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:orientation="horizontal"
+    android:padding="2dp"
+    android:id="@+id/linearItem"
+    >
+
+    <LinearLayout
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_main_item_photo"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:layout_marginEnd="7.5dp"
+        android:tint="@color/black"
+        android:src="@drawable/ic_construction"
+        >
+    </ImageView>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Begin Construction"
+                android:id="@+id/txt_main_item_title"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1000 users"
+                android:id="@+id/txt_main_item_text"
+                android:layout_marginTop="2dp"
+                android:textStyle="normal"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp"
+            android:tint="#707070"
+            android:src="@drawable/ic_greater"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#707070"
+            android:layout_alignParentBottom="true">
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

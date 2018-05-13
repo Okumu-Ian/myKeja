@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="icelabs.eeyan.mykeja">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FormActivity" />
+        <activity
+            android:name=".ArchList"
+            android:label="@string/title_activity_arch_list"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ArchitectProfile"
+            android:label="@string/title_activity_architect_profile"
+            android:parentActivityName=".ArchList"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="icelabs.eeyan.mykeja.ArchList" />
+        </activity>
+        <activity
+            android:name=".ProjectActivity"
+            android:label="@string/title_activity_project"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".GalleryActivity" />
+        <activity android:name=".GalleryItems" />
+        <activity android:name=".LogInActivity"  android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".RegisterActivity" android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
