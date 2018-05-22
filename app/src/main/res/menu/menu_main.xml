@@ -11,4 +11,8 @@
         android:id="@+id/exit_action"
         android:title="Sign Out"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/settingz_action"
+        android:title="Settings"
+        app:showAsAction="never"/>
 </menu>

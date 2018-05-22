@@ -56,7 +56,7 @@ public class ArchList extends AppCompatActivity {
     private List<ArchModel> modelList;
     private CardView cardView;
     private SearchView searchView;
-    private String url = "http://www.mykeja.epizy.com/testImages/data.json?i=2";
+    private final String url = "http://192.168.43.120:5500/archs.json";
     private AwesomeUtils utils = new AwesomeUtils(ArchList.this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,11 +86,11 @@ public class ArchList extends AppCompatActivity {
 
 
                     Toast.makeText(context, ""+response,Toast.LENGTH_LONG).show();
-                Log.d("RESPONSE",response);
+                    Log.d("RESPONSE",response);
 
 
                     try {
-                        JSONObject jsonObject = new JSONObject(response.trim());
+                        JSONObject jsonObject = new JSONObject(response);
                         JSONArray array = jsonObject.getJSONArray("data");
                         for (int i = 0; i <array.length() ; i++)
                         {

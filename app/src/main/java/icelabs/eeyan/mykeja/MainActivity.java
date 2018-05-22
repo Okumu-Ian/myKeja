@@ -83,6 +83,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,LogInActivity.class));
                 finish();
                 break;
+            case R.id.settingz_action:
+                startActivity(new Intent(MainActivity.this,Settings.class));
+                break;
         }
 
         return true;
